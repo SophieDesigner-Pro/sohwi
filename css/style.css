@@ -1,0 +1,980 @@
+@charset "utf-8";
+
+:root {
+  /* 컬러 변수선언 */
+  --beige-100: #eee9da;
+  --blue-200: #bdcdd6;
+  --blue-400: #93bfcf;
+  --blue-600: #6096b4;
+  --blue-700: #58839c;
+  --blue-800: #4b6777;
+  --blue-900: #2f3b42;
+  --irun-brand: #15053b;
+  --irun-sub: #311574;
+  --nfinders-brand: #41b0c8;
+  --nfinders-sub: #5fbdd2;
+  --goongle-brand: #4c6eb6;
+  --goongle-sub: #547ed8;
+  --fastballz-brand: #d65e40;
+  --fastballz-sub: #e0765c;
+  --project-text: #706f6f;
+  --white: #ffffff;
+  --footer-text: #304450;
+  --aboutMe-blue: #28448C;
+  --aboutMe-ivory: #FFFDF9;
+  --aboutMe-skyBlue: #1C74A6;
+  --pj-button-blue01: #C1D2F6;
+  --pj-button-orange01: #FFA088;
+}
+
+.inner {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background: linear-gradient(180deg, var(--blue-600) 0%, var(--blue-200) 100%);
+}
+
+header .inner {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  padding: 0px 4px;
+
+}
+
+header h1 a {
+  font-family: "Comico";
+  font-size: 60px;
+  color: var(--beige-100);
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+header h1 a div {
+  color: var(--blue-600);
+}
+
+nav {}
+
+.gnb {
+  display: flex;
+  gap: 120px;
+}
+
+.gnb li {}
+
+.gnb li a {
+  font-family: "Satoshi";
+  font-size: 18px;
+  line-height: 150%;
+  /* 45px */
+  letter-spacing: -0.6px;
+  color: var(--beige-100);
+  font-family: 'Satpshi_Medium';
+  font-size: 25px;
+}
+
+/* -----------main_visual------------------ */
+section.main_visual {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--blue-200);
+  position: relative;
+}
+
+section.main_visual .inner {
+  padding-top: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line */
+.line {
+  display: inline-flex;
+  align-items: center;
+  gap: 17px;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.line div {
+  font-family: "Satoshi";
+  font-weight: 300;
+  color: var(--blue-400);
+}
+
+.line div.last {
+  color: var(--beige-100);
+}
+
+.line p,
+.line h2 {
+  background-color: var(--blue-600);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: #eee9da;
+  font-family: "Comico";
+  font-size: 113px;
+  line-height: 120%;
+  letter-spacing: -2.26px;
+}
+
+/* -----------LINE 01------------------ */
+.line01 {
+  width: 1492px;
+  height: 148px;
+}
+
+.line01 div:first-of-type {
+  /* EMPATHY */
+  background-image: url(../img/txtCircle.svg);
+  object-fit: cover;
+  width: 156px;
+  height: 108px;
+  text-align: center;
+  line-height: 108px;
+  font-family: 'Satoshi_Regular';
+  font-size: 20px;
+}
+
+.line01 .deepBlue01 {
+  /* wait, */
+  background-color: var(--blue-700);
+}
+
+.line01 .deepBlue02 {
+  /* what? */
+  background-color: var(--blue-800);
+}
+
+.line01 div:last-of-type {
+  /* FLOW */
+  background-image: url(../img/txtCircle.svg);
+  object-fit: cover;
+  width: 156px;
+  height: 108px;
+  text-align: center;
+  line-height: 108px;
+  font-family: 'Satoshi_Regular';
+  font-size: 20px;
+}
+
+/* -----------LINE 02------------------ */
+.line02 {
+  width: 1188px;
+  height: 168px;
+}
+
+.line02 div:first-of-type {
+  /* CURIOSITY */
+  background-image: url(../img/txtTriangle.svg);
+  object-fit: cover;
+  width: 192px;
+  height: 165px;
+  text-align: center;
+  line-height: 165px;
+  font-family: 'Satoshi_Regular';
+  font-size: 20px;
+}
+
+.line02 p:nth-of-type(1) {
+  /* To */
+}
+
+.line02 .deepBlue03 {
+  /* ah, */
+  background-color: var(--blue-900);
+}
+
+.line02 .deepBlue02 {
+  /* got */
+  background-color: var(--blue-800);
+}
+
+.line02 .deepBlue01 {
+  /* it */
+  background-color: var(--blue-700);
+}
+
+.line02 div:last-of-type {
+  /* CLARITY */
+  background-image: url(../img/txtSquare_1.svg);
+  object-fit: cover;
+  width: 164px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-family: 'Satoshi_Regular';
+  font-size: 20px;
+}
+
+/* -----------LINE 03------------------ */
+.line03 {
+  width: 1330px;
+  height: 166px;
+}
+
+.line03 p:nth-of-type(1) {
+  /* That */
+}
+
+.line03 p:nth-of-type(2) {
+  /* is */
+}
+
+.line03 div:nth-of-type(1) {
+  /* STRATEGY */
+  background-image: url(../img/txtCircle.svg);
+  object-fit: cover;
+  width: 156px;
+  height: 108px;
+  text-align: center;
+  line-height: 108px;
+  font-family: 'Satoshi_Regular';
+  font-size: 20px;
+}
+
+.line03 p:nth-of-type(3) {
+  /* my */
+}
+
+.line03 p:nth-of-type(4) {
+  /* job */
+}
+
+.line03 div:nth-of-type(2) {
+  /* IMPACT */
+  background-image: url(../img/txtTriangle.svg);
+  object-fit: cover;
+  width: 192px;
+  height: 165px;
+  text-align: center;
+  line-height: 165px;
+  font-family: 'Satoshi_Regular';
+  font-size: 20px;
+}
+
+/* -----------LINE 04------------------ */
+.line04 {
+  width: 1348px;
+  height: 148px;
+}
+
+.line04 h2 {
+  background: var(--beige-100);
+  color: var(--blue-600);
+}
+
+.line04 div {
+  /* ADAPTABILITY */
+  background-image: url(../img/txtSquare_2.svg);
+  object-fit: cover;
+  width: 164px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-family: 'Satoshi_Regular';
+  font-size: 20px;
+}
+
+.line04 h2:last-of-type {
+  /* Designer */
+}
+
+/* ----------DOWN 버튼------------------- */
+.downBtn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  animation: identifier 2s infinite;
+  z-index: 10;
+}
+
+@keyframes identifier {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.downBtn a {}
+
+.downBtn img {}
+
+/* ------------About Me------------------ */
+section.aboutMe {
+  width: 100%;
+  /* height: 2158px; */
+  background: radial-gradient(38.1% 32.83% at 50% 50%,
+      var(--beige-100) 19.23%,
+      var(--blue-400) 67.79%,
+      var(--blue-200) 91.83%);
+  padding: 200px 0 120px;
+  position: relative;
+}
+
+.about_top {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  /* align-items: center; */
+  align-items: center;
+  /* margin-bottom: 700px; */
+  /* background: #ccc; */
+}
+
+.profile_box {
+  position: relative;
+  height: 846px;
+  /* background: yellow; */
+  display: flex;
+  align-items: flex-end;
+  /*   display: flex;
+  flex-direction: column;
+  align-items: center; */
+  /* width: 50%; */
+}
+
+.name_label {
+  position: absolute;
+  top: 220px;
+  right: 0;
+}
+
+.name_label a {
+  /* margin-bottom: 0; */
+  /* margin-top: -30px; */
+  font-family: "Comico";
+  font-size: 30px;
+  color: var(--aboutMe-ivory);
+  background-color: var(--aboutMe-blue);
+  width: 320px;
+  height: 60px;
+  display: flex;
+  padding: 18px 26px;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.name_label a {}
+
+.name_label a img {
+  width: 35px;
+  height: 35px;
+}
+
+.profile_box img {
+  /* width: 300px; */
+  border-radius: 20px;
+}
+
+.txtBox_blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 386px;
+  top: 0;
+  background-image: url(../img/txtCloud_blue.svg);
+  background-size: contain;
+  width: 378px;
+  height: 316px;
+  text-align: center;
+  font-family: "Satoshi_Bold";
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--goongle-brand);
+}
+
+.txtBox_blue::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  width: 125px;
+  height: 123px;
+  background-image: url(../img/txtCloud_blue_before.png );
+  background-size: cover;
+}
+
+.slogan_box {
+  /*   position: absolute;
+  top: 330px;
+  left: 0px;
+  transform: translateY(-50%);
+  width: 880px; */
+  z-index: 10;
+  font-family: "Satoshi_Light";
+  color: var(--beige-100);
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.5;
+
+}
+
+.slogan_box p {
+  background-color: var(--blue-600);
+  padding: 8px 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+
+}
+
+.slogan_box .highlight {
+  font-family: 'Satoshi_Medium';
+}
+
+.about_middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+.cat_box {
+  width: 25%;
+  position: relative;
+  text-align: center;
+}
+
+.cat_box img {
+  width: 550px;
+  height: 227px;
+  position: absolute;
+  bottom: -480px;
+
+}
+
+.txtBox_orange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url(../img/txtCloud_og.svg);
+  object-fit: cover;
+  width: 378px;
+  height: 315px;
+  color: var(--white);
+  font-family: "Satoshi_Bold";
+  font-size: 22px;
+  line-height: 150%;
+  /* 33px */
+
+  position: absolute;
+  left: 0px;
+  top: -200px;
+  z-index: 1;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: var(--fastballz-brand);
+}
+
+.txtBox_orange::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  width: 125px;
+  height: 123px;
+  background-image: url(../img/txtCloud_orange_before.png );
+  background-size: cover;
+}
+
+
+.contact_box {
+  width: 50%;
+  text-align: center;
+}
+
+.txtBox_skyBlue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url(../img/txtBox_sb.svg);
+  background-size: cover;
+  background-position: center;
+
+  width: 380px;
+  height: 314px;
+  padding: 20px;
+  margin: 0 auto;
+
+  font-family: "Satoshi_Bold";
+  font-size: 22px;
+  line-height: 1.5;
+
+  color: var(--nfinders-brand);
+}
+
+.social_links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-size: 24px;
+  color: var(--blue-900);
+}
+
+.social_links a {
+  color: var(--blue-800);
+  transition: 0.3s;
+}
+
+.about_bottom {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 40px; */
+  padding: 40px 30px;
+  background-color: var(--beige-100);
+  border-radius: 20px;
+}
+
+.about_bottom .card_01,
+.about_bottom .card_02,
+.about_bottom .card_03,
+.about_bottom .card_04 {
+  width: 100%;
+  padding: 30px;
+  font-family: "Satoshi";
+  color: var(--footer-text);
+}
+
+.about_bottom h4 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--aboutMe-skyBlue);
+  font-family: 'Comico';
+}
+
+.about_bottom p {
+  font-family: 'Satoshi_Regular';
+  font-size: 20px;
+  color: var(--blue-600);
+  line-height: 150%;
+  /* 30px */
+}
+
+/* ------------Projects Section------------------ */
+section.projects {
+  width: 100%;
+
+  background-color: var(--blue-600);
+  padding: 160px 0 120px;
+}
+
+
+.projects h2 {
+  font-family: "Comico";
+  font-size: 100px;
+  color: var(--beige-100);
+  margin-bottom: 80px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.projects .inner {
+  display: flex;
+  height: auto;
+}
+
+.project_grid {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 60px;
+  flex-wrap: wrap;
+}
+
+.sticky {
+  position: sticky;
+  height: 100%;
+  top: 100px;
+  z-index: 1;
+}
+
+.project_card {
+  padding: 24px;
+  /* 프로젝트 이미지 여백조정 */
+  background-color: var(--beige-100);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+
+  width: 612px;
+  height: 697px;
+  text-align: left;
+  font-family: "Satoshi";
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.project_card:hover {
+  transform: translateY(-6px);
+}
+
+.project_card .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* 가운데 정렬 */
+  position: relative;
+  /* 버튼 위치 기준 */
+}
+
+.project_card .top .project_title {
+  font-size: 30px;
+  font-family: 'Satoshi_Bold';
+}
+
+.project_card .top .project_title.goongle {
+  color: var(--goongle-brand);
+}
+
+.project_card .top .project_title.fastBallz {
+  color: var(--fastballz-brand);
+}
+
+.project_card .top .project_title.iRun {
+  color: var(--irun-brand);
+}
+
+.project_card .top .project_title.genia {
+  color: lightseagreen;
+}
+
+.project_card .top .project_title.nFinders {
+  color: var(--nfinders-brand);
+}
+
+.project_card .top .project_title.comingSoon {
+  color: #474242;
+}
+
+
+/* 1. 공통 버튼 스타일 (.left_btn, .right_btn) */
+.project_card .top a {
+  display: flex;
+  align-items: center;
+  /* 세로 가운데 정렬 */
+  justify-content: center;
+  /* 가운데 정렬 */
+  width: 110px;
+  height: 62px;
+  /* 두 버튼 높이 동일하게 통일 */
+  padding: 0 16px;
+  /* 좌우만 여백 */
+  font-family: 'Comico';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  border-radius: 100px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.project_card .top a.left_btn {
+  box-shadow: -4px -4px 8px 0px rgba(7, 20, 48, 0.40) inset, 0px 4px 0px 0px rgba(210, 200, 176, 0.25), -17px 2px 61px 0px #F4EBD6, 17px 11px 52px 0px rgba(210, 202, 158, 0.80);
+}
+
+.project_card .top a.right_btn {
+  box-shadow: -4px -4px 8px 0px rgba(18, 57, 65, 0.40) inset, 4px 4px 4px 0px rgba(18, 57, 65, 0.20) inset, -17px -2px 61px 0px #F4EBD6, 17px 11px 52px 0px rgba(210, 202, 158, 0.80);
+}
+
+.project_card .top a.left_btn.deliverables {
+  background: linear-gradient(270deg, rgba(76, 110, 182, 0.20) 0%, rgba(193, 210, 246, 0.20) 100%), linear-gradient(180deg, #4C6EB6 0%, #C1D2F6 100%);
+}
+
+.project_card .top a.left_btn.upcoming {
+  background: #EDE7D9;
+  color: var(--irun-brand)
+}
+
+.project_card .top a.right_btn.project {
+  background: linear-gradient(270deg, rgba(65, 176, 200, 0.20) 0%, rgba(158, 231, 246, 0.20) 100%), linear-gradient(180deg, #41B0C8 0%, #9EE7F6 100%);
+}
+
+.project_card .top a.right_btn.prototype {
+  background: linear-gradient(270deg, rgba(214, 94, 64, 0.20) 0%, rgba(255, 160, 136, 0.20) 100%), linear-gradient(180deg, #D65E40 0%, #FFA088 100%);
+}
+
+
+.project_card .img_box {
+  /* width: 100%; */
+  width: calc(100% + 48px);
+  height: 350px;
+  margin: -24px -24px 16px -24px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  /* padding: 0; */
+  /* 내부 여백 제거 */
+  /* margin: 0 auto; */
+}
+
+.project_card:nth-child(1) .img_box {
+  background-color: var(--goongle-brand);
+}
+
+.project_card:nth-child(2) .img_box {
+  background-color: var(--fastballz-brand);
+}
+
+.project_card:nth-child(3) .img_box {
+  background-color: var(--irun-brand);
+}
+
+.project_card:nth-child(4) .img_box {
+  background-color: lightseagreen
+}
+
+.project_card:nth-child(5) .img_box {
+  background-color: var(--nfinders-brand);
+}
+
+.project_card:nth-child(6) .img_box {
+  background-color: #4b6777;
+}
+
+
+.project_card img {
+  /* height: 350px; */
+  height: 90%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.project_card h4 {
+  font-family: 'Satoshi_Bold';
+  font-size: 27px;
+  font-weight: 700;
+  color: var(--blue-900);
+  margin-bottom: 8px;
+}
+
+.project_card h4.goongle {
+  color: var(--goongle-sub);
+}
+
+.project_card h4.fastBallz {
+  color: var(--fastballz-sub);
+}
+
+.project_card h4.iRun {
+  color: var(--irun-sub);
+}
+
+.project_card h4.genia {
+  color: lightseagreen;
+}
+
+.project_card h4.nFinders {
+  color: var(--nfinders-sub);
+}
+
+.project_card h4.comingSoon {
+  color: #4b6777;
+}
+
+.project_card p {
+  font-family: 'Satoshi_Regular';
+  font-size: 20px;
+  line-height: 150%;
+  /* 30px */
+  color: var(--project-text);
+  margin-bottom: 16px;
+}
+
+.tag_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 6px 12px;
+  background-color: var(--blue-600);
+  color: var(--white);
+  border-radius: 5px;
+  font-family: "Comico";
+  font-weight: 500;
+}
+
+.tag.goongle {
+  background-color: var(--goongle-sub);
+}
+
+.tag.fastBallz {
+  background-color: var(--fastballz-sub);
+}
+
+.tag.iRun {
+  background-color: var(--irun-sub);
+}
+
+.tag.genia {
+  background-color: lightseagreen;
+}
+
+.tag.nFinders {
+  background-color: var(--nfinders-sub);
+}
+
+.tag.comingSoon {
+  background-color: var(--blue-800);
+}
+
+.cat_sticker {
+  position: absolute;
+  /* bottom: 0;
+  right: 0;
+  width: 100px; */
+  z-index: 5;
+}
+
+/* ------------Footer Section------------------ */
+
+.footer {
+  width: 100%;
+  background-color: var(--beige-100);
+  padding: 100px 0 60px;
+  font-family: "Satoshi";
+}
+
+.footer .inner {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+/* 상단 메시지 + 링크 */
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.footer_message {
+  font-family: "Comico";
+  font-size: 26px;
+  color: var(--blue-900);
+}
+
+/* 링크 리스트 */
+.footer_links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer_links li a {
+  font-size: 16px;
+  color: var(--blue-800);
+  transition: 0.3s;
+}
+
+.footer_links li a:hover {
+  text-decoration: underline;
+}
+
+/* 구분선 */
+.footer_divider {
+  border: none;
+  border-top: 1px solid var(--footer-text);
+  margin-bottom: 40px;
+}
+
+/* 하단 좌우 영역 */
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+/* 브랜드명 - SOHWI ✦ */
+.footer_brand {
+  font-family: "Comico";
+  font-size: 20px;
+  color: var(--blue-900);
+}
+
+/* 저작권 & 상태 */
+.footer_right {
+  text-align: right;
+  font-size: 14px;
+  color: var(--footer-text);
+}
+
+.footer_status {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status_dot {
+  width: 8px;
+  height: 8px;
+  background-color: limegreen;
+  border-radius: 50%;
+  display: inline-block;
+  animation: dotAni 1.5s infinite;
+}
+
+@keyframes dotAni {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
