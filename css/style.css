@@ -465,6 +465,7 @@ section.aboutMe {
   width: 25%;
   position: relative;
   text-align: center;
+  z-index: 2;
 }
 
 .cat_box img {
@@ -523,20 +524,15 @@ section.aboutMe {
   justify-content: center;
   align-items: center;
   text-align: center;
-
   background-image: url(../img/txtBox_sb.svg);
   background-size: cover;
   background-position: center;
-
   width: 380px;
   height: 314px;
   padding: 20px;
-  margin: 0 auto;
-
   font-family: "Satoshi_Bold";
   font-size: 22px;
   line-height: 1.5;
-
   color: var(--nfinders-brand);
 }
 
