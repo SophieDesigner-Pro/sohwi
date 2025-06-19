@@ -83,8 +83,15 @@ nav {}
   /* 45px */
   letter-spacing: -0.6px;
   color: var(--beige-100);
-  font-family: 'Satpshi_Medium';
+  font-family: 'Satoshi_Medium';
   font-size: 25px;
+  transition: all 0.3s ease;
+}
+
+.gnb li a:hover {
+  background-color: var(--beige-100);
+  color: var(--blue-900);
+  border-radius: 10px;
 }
 
 /* -----------main_visual------------------ */
@@ -386,12 +393,19 @@ section.aboutMe {
   gap: 10px;
 }
 
+.name_label a:hover {
+  background-color: var(--fastballz-brand);
+  color: var(--blue-900);
+  transition: all 0.3s ease;
+}
+
 .name_label a {}
 
 .name_label a img {
   width: 35px;
   height: 35px;
 }
+
 
 .profile_box img {
   /* width: 300px; */
