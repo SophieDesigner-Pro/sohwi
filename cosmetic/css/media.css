@@ -1,0 +1,228 @@
+/* ===============================
+   Media Queries for ZÉYA Website
+   =============================== */
+
+/* 💻 MacBook Pro: 1280px ~ 1440px (13~14inch) */
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .inner {
+    width: 92%;
+    max-width: 1300px;
+  }
+
+  .main_visual h2 {
+    font-size: 4.2rem;
+  }
+
+  .brand_story h3,
+  .best_product h3,
+  .our_business h3,
+  .instargram h3 {
+    font-size: 2.4rem;
+  }
+
+  .brand_story .txt_box strong,
+  .best_product .txt_box strong,
+  .our_business p,
+  .instargram p {
+    font-size: 1rem;
+  }
+
+  .our_business h4 {
+    font-size: 1.5rem;
+  }
+
+  .best_product ul li strong {
+    font-size: 1.2rem;
+  }
+
+  .best_product ul li em {
+    font-size: 1rem;
+  }
+
+  footer .inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  footer .inner ul.list {
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
+  footer .inner .logo {
+    font-size: 1.6rem;
+  }
+}
+
+/* 📱 Tablet (768px ~ 1279px) */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .inner {
+    width: 90%;
+  }
+
+  .main_visual h2 {
+    font-size: 3.5rem;
+  }
+
+  .brand_story h3,
+  .best_product h3,
+  .our_business h3,
+  .instargram h3 {
+    font-size: 2rem;
+  }
+
+  .brand_story .txt_box strong,
+  .best_product .txt_box strong,
+  .our_business p,
+  .instargram p {
+    font-size: 0.95rem;
+  }
+
+  .best_product ul li strong {
+    font-size: 1.1rem;
+  }
+
+  .best_product ul li em {
+    font-size: 0.95rem;
+  }
+
+  .our_business h4 {
+    font-size: 1.3rem;
+  }
+}
+
+/* 📱 Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+  .inner {
+    width: 90%;
+  }
+
+  .main_visual h2 {
+    font-size: 2.8rem;
+  }
+
+  .brand_story h3,
+  .best_product h3,
+  .our_business h3,
+  .instargram h3 {
+    font-size: 1.6rem;
+  }
+
+  .brand_story .txt_box strong,
+  .best_product .txt_box strong,
+  .our_business p,
+  .instargram p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .our_business h4 {
+    font-size: 1.1rem;
+  }
+
+  .best_product ul li strong {
+    font-size: 1rem;
+  }
+
+  .best_product ul li em {
+    font-size: 0.85rem;
+  }
+
+  footer {
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  footer .inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+
+  footer .inner ul.list {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  footer .inner ul.sns {
+    font-size: 1.2rem;
+    gap: 15px;
+  }
+}
+
+/* ========== Layout & Image Adjustments ========== */
+
+/* 📱 Tablet (768px ~ 1279px) */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .brand_story .img_box {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .best_product .right_box ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .our_business .list ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .instargram .list ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+/* 📱 Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+  .brand_story .img_box {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .best_product .right_box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .best_product .right_box ul li {
+    width: 100%;
+  }
+
+  .our_business .list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .instargram .list ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem;
+  }
+
+  .instargram .list ul li img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+

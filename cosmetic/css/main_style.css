@@ -1,0 +1,240 @@
+/* ========== Main Visual Section ========== */
+.main_visual {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_visual h2 {
+    font-size: 5rem;
+    font-family: var(--font-title);
+    color: var(--color-primary);
+}
+
+/* ========== Brand Story Section ========== */
+.brand_story {
+    padding: 6rem 0;
+    background-color: var(--color-bg);
+}
+
+.brand_story .img_box {
+    width: 100%;
+    height: 400px;
+    background: url('../asset/img/brand_story.jpg') center/cover no-repeat;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.brand_story h3 {
+    font-family: var(--font-title);
+    font-size: 3rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.brand_story .txt_box strong {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    color: var(--color-dark);
+    line-height: 1.6;
+}
+
+/* ========== Best Product Section ========== */
+.best_product {
+    padding: 6rem 0;
+}
+
+.best_product h3 {
+    font-family: var(--font-title);
+    font-size: 2.8rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+.best_product .txt_box strong {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    color: var(--color-dark);
+    line-height: 1.6;
+}
+
+.best_product .right_box ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.best_product .right_box ul li {
+    background: #fff;
+    padding: 2rem;
+    border: 1px solid #eee;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.best_product .right_box ul li:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.best_product ul li strong {
+    font-family: var(--font-title);
+    font-size: 1.4rem;
+    color: var(--color-dark);
+    display: block;
+}
+
+.best_product ul li span {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    display: block;
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.best_product ul li em {
+    color: var(--color-primary);
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* ========== Our Business Section ========== */
+.our_business {
+    padding: 6rem 0;
+    background-color: var(--color-bg);
+}
+
+.our_business h3 {
+    font-family: var(--font-title);
+    font-size: 2.6rem;
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+}
+
+.our_business .list ul {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.our_business .list li {
+    flex: 1 1 30%;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.our_business .list li:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.our_business h4 {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-dark);
+}
+
+.our_business p {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-dark);
+}
+
+/* ========== Instagram Section ========== */
+.instargram {
+    padding: 5rem 0;
+}
+
+.instargram p {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-dark);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.instargram h3 {
+    font-family: var(--font-title);
+    font-size: 2.6rem;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.instargram .list ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding-inline: 1rem;
+}
+
+.instargram .list li img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.6rem;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.instargram .list li img:hover {
+    transform: scale(1.05);
+}
+
+/* ========== Reusable Elements ========== */
+.more {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-body);
+    font-weight: 500;
+    color: var(--color-dark);
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.more .plus {
+    width: 16px;
+    height: 16px;
+    background: var(--color-accent);
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.more:hover {
+    color: var(--color-accent);
+    transform: translateX(4px);
+}
+
+/* ========== Responsive (Optional in media.css) ========== */
+/* 이 부분은 media.css로 따로 작성하거나, 아래를 참고해서 추가 */
+@media (max-width: 768px) {
+    .main_visual h2 {
+        font-size: 3.5rem;
+    }
+
+    .brand_story h3,
+    .best_product h3,
+    .our_business h3,
+    .instargram h3 {
+        font-size: 2rem;
+    }
+
+    .best_product .right_box ul {
+        grid-template-columns: 1fr;
+    }
+
+    .our_business .list ul {
+        flex-direction: column;
+    }
+
+    .instargram .list ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
